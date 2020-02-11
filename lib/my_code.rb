@@ -30,7 +30,7 @@ end
 def reduce_to_total(array, starting_point = 0)
   output = starting_point
   array.length.times do |i|
-    output = output + array[i])
+    output = output + array[i]
   end
    
   output
