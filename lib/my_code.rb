@@ -27,7 +27,7 @@ def map_to_square(array)
   output
 end
 
-def reduce_to_total(array, starting_point = 0)
+def reduce_to_total(array)
   output = starting_point
   array.length.times do |i|
     output = output + array[i]
@@ -36,7 +36,7 @@ def reduce_to_total(array, starting_point = 0)
   output
 end
 
-def reduce_to_all_true(array, starting_point = 0)
+def reduce_to_all_true(array)
   output = starting_point
   array.length.times do |i|
     output = output + array[i]
@@ -45,7 +45,7 @@ def reduce_to_all_true(array, starting_point = 0)
   output
 end
 
-def reduce_to_total(array, starting_point = 0)
+def reduce_to_any_true(array)
   output = starting_point
   array.length.times do |i|
     output = output + array[i]
