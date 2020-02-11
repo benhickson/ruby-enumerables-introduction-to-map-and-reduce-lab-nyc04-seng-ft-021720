@@ -37,19 +37,19 @@ def reduce_to_total(array)
 end
 
 def reduce_to_all_true(array)
-  output = starting_point
   array.length.times do |i|
-    output = output + array[i]
+    if (!array[i]) then
+      return false
+    end
   end
-   
-  output
+  return true
 end
 
 def reduce_to_any_true(array)
-  output = starting_point
   array.length.times do |i|
-    output = output + array[i]
+    if (array[i]) then
+      return true
+    end
   end
-   
-  output
+  return false
 end
